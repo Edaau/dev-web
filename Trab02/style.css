@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #f5f5f5;
+}
+
+.esquerda {
+    width: 25%;
+    float: left;
+    padding: 10px;
+}
+
+.esquerda h2 {
+    margin-bottom: 50px;
+}
+
+.esquerda p {
+    margin-bottom: 50px;
+}
+.centro {
+    width: 45%;
+    float: left;
+    text-align: center;
+    padding: 10px;
+}
+
+.direita {
+    width: 25%;
+    float: right;
+    padding: 10px;
+}
+
+.direita div {
+    margin-bottom: 15px;
+    margin-left: 80px;
+}
+
+.direita img {
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.direita p {
+    display: inline;
+}
