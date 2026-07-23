@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<img class="logo" src="EscudoDoVascoDaGama.svg.webp" alt="Escudo do Vasco da Gama">
+<form action="" method="post" autocomplete="on">
+<input type="hidden" name="clube" value="Vasco da Gama">
+
+<label for="nome">Nome</label>
+<input type="text" id="nome" name="nome" required placeholder="Nome e sobrenome" minlength="3" maxlength="80">
+
+<label for="apelido">Apelido</label>
+<input type="search" id="apelido" name="apelido" placeholder="Nome no campo" pattern="[A-Za-zÀ-ÿ0-9 ]+">
+
+<label for="email">E-mail</label>
+<input type="email" id="email" name="email" required placeholder="nome@exemplo.com">
+
+<label for="senha">Senha</label>
+<input type="password" id="senha" name="senha" required placeholder="Digite uma senha" minlength="6" maxlength="20">
+
+<label for="idade">Idade</label>
+<input type="number" id="idade" name="idade" required min="12" max="50" step="1">
+
+<label for="nascimento">Nascimento</label>
+<input type="date" id="nascimento" name="nascimento" required>
+
+<label for="horario">Horário do treino</label>
+<input type="time" id="horario" name="horario" required>
+
+<label for="datahora">Data e hora do cadastro</label>
+<input type="datetime-local" id="datahora" name="datahora" readonly value="2026-07-19T10:00">
+
+<label for="telefone">Telefone</label>
+<input type="tel" id="telefone" name="telefone" required placeholder="Digite seu telefone">
+
+<label for="site">Site</label>
+<input type="url" id="site" name="site" placeholder="https://">
+
+<label for="cor">Cor da chuteira</label>
+<input type="color" id="cor" name="cor" value="#000000">
+
+<label for="nivel">Nível de preparo físico</label>
+<input type="range" id="nivel" name="nivel" min="0" max="10" step="1" value="5">
+
+<label for="foto">Foto</label>
+<input type="file" id="foto" name="foto" required>
+
+<label for="posicao">Posição</label>
+<select id="posicao" name="posicao" required>
+<option value="">Selecione</option>
+<option value="goleiro">Goleiro</option>
+<option value="zagueiro">Zagueiro</option>
+<option value="lateral">Lateral</option>
+<option value="volante">Volante</option>
+<option value="meia">Meia</option>
+<option value="atacante">Atacante</option>
+</select>
+
+<label for="categoria">Categoria</label>
+<select id="categoria" name="categoria" required>
+<option value="">Selecione</option>
+<option value="base">Base</option>
+<option value="profissional">Profissional</option>
+</select>
+
+<label>Pé dominante</label>
+<label for="canhoto"><input type="radio" id="canhoto" name="pe" value="canhoto" required> Canhoto</label>
+<label for="destro"><input type="radio" id="destro" name="pe" value="destro"> Destro</label>
+
+<label for="observacoes">Observações</label>
+<textarea id="observacoes" name="observacoes" required placeholder="Fale sobre o jogador" minlength="10" maxlength="300"></textarea>
+
+<label for="clubeTexto">Clube</label>
+<input type="text" id="clubeTexto" name="clubeTexto" value="Vasco da Gama" readonly>
+
+<label class="checkbox-line"><input type="checkbox" id="termos" name="termos" required> Conferi os dados</label>
+
+<label for="interno">Responsável interno</label>
+<input type="text" id="interno" name="interno" value="Comissão técnica" disabled>
+
+<button type="submit">Cadastrar jogador</button>
+</form>
+</body>
+</html>
